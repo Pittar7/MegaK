@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep</title>
+
+   
+</head>
+<body>
+    <section class="products">
+        <h1>Lista produktów</h1>
+        <ul class="products-list">
+            <li><strong>Ogóki kiszone</strong> - 9.99 <button class="btn-buy-product" data-name="Ogórki kiszone" data-price="9.99">Kup!</button></li>
+            <li><strong>Pomidorki</strong> - 7.50 <button class="btn-buy-product" data-name="Pomidory" data-price="7.50">Kup!</button></li>
+            <li><strong>Mercedes C Klasa</strong> - 109000.00 <button class="btn-buy-product" data-name="Mercedes C Klasa" data-price="109000.00">Kup!</button></li>
+           
+        </ul>
+    </section>
+    <section class="basket">
+        <h1>Koszyk</h1>
+        <ul class="basket-list">
+            
+        </ul>
+        <button class="btn-buy-all" disabled>Złóż zamówienie</button>
+    </section>
+<section class="admin-add-product">
+    <h1>Administracja: dodaj produkt</h1>
+    <form class="form-add-product">
+        <input type="text" name="product-name" placeholder="Podaj nazwę..." required>
+        <input type="number" step="any" name="product-price" placeholder="Podaj ceneę" required>
+        <button type="submit">Dodaj</button>
+    </form>
+</section>
+    <script src="src/basket.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/admin-ui.js"></script>
+</body>
+</html>
